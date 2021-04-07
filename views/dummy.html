@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Asciidoctor 1.5.4">
+  <title>Learning to program is like climbing a mountain range</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://asciidoclive.com/assets/asciidoctor.js/css/asciidoctor.css">
+</head>
+
+<body class="article">
+  <div id="header">
+    <nav class="navbar navbar-expand navbar-light bg-light">
+        <div class="nav navbar-nav">
+            <a class="nav-item nav-link active" href="#">Marco Steinke</a>
+            <a class="nav-item nav-link" href="/">Start</a>
+        </div>
+    </nav>
+    <h1 id="title">Web Applications, Networking, Security and more!</h1>
+  </div>
+  <script>
+    const HEAD = document.querySelector("#header");
+    const MESSAGE_NO_JAVASCRIPT = "Activate Javascript in your browser, to access this page with its full functionality!";
+
+    // set scroll-behavior to smooth
+    document.querySelector("html").style.scrollBehavior = "smooth";
+
+    class TOC {
+        static create() {
+            HEAD.insertAdjacentHTML("beforeend", "<hr><h2>Table of Contents</h2><br>");
+            HEAD.insertAdjacentHTML("beforeend", "<ul>");
+        
+            document.querySelectorAll("h3").forEach(header => {
+                header.setAttribute("id", header.innerHTML);
+                HEAD.insertAdjacentHTML("beforeend", "<li><a style=\"margin: 12px\" href=\"#" + header.innerHTML + "\">" + header.innerHTML + "</a></li><br>");
+            });
+        
+            HEAD.insertAdjacentHTML("beforeend", "</ul><hr>");
+            HEAD.insertAdjacentHTML("beforeend", "<noscript>" + MESSAGE_NO_JAVASCRIPT + "</noscript>");
+        }
+
+    }
+
+    TOC.create();
+    </script>
+</body>
+
+</html>

@@ -303,7 +303,7 @@
             HEAD.insertAdjacentHTML("beforeend", "<hr><h2>Table of Contents</h2><br>");
             HEAD.insertAdjacentHTML("beforeend", "<ul>");
         
-            document.querySelectorAll("h3").forEach(header => {
+            document.querySelectorAll("h2").forEach(header => {
                 header.setAttribute("id", header.innerHTML);
                 HEAD.insertAdjacentHTML("beforeend", "<li><a style=\"margin: 12px\" href=\"#" + header.innerHTML + "\">" + header.innerHTML + "</a></li><br>");
             });
