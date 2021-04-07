@@ -1,74 +1,321 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-    <style>
-        /* Style The Dropdown Button */
-        .dropbtn {
-          color: white;
-          border: none;
-          cursor: pointer;
-          background: #f8f9fa!important;
-        }
-        
-        /* The container <div> - needed to position the dropdown content */
-        .dropdown {
-          position: relative;
-          display: inline-block;
-        }
-        
-        /* Dropdown Content (Hidden by Default) */
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f9f9f9;
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-        }
-        
-        /* Links inside the dropdown */
-        .dropdown-content a {
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-        }
-        
-        /* Change color of dropdown links on hover */
-        .dropdown-content a:hover {background-color: #f1f1f1}
-        
-        /* Show the dropdown menu on hover */
-        .dropdown:hover .dropdown-content {
-          display: block;
-        }
-        
-        /* Change the background color of the dropdown button when the dropdown content is shown */
-        .dropdown:hover .dropbtn {
-          background-color: #f8f9fa!important;
-        }
-    </style>
-    <div class="container">
-        <nav class="navbar navbar-expand navbar-light bg-light">
-            <div class="nav navbar-nav">
-                <a class="nav-item nav-link active" href="#">Marco Steinke</a>
-                <a class="nav-item nav-link" href="/">Start</a>
-            </div>
-        </nav>
+<head>
+  <meta charset="UTF-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Asciidoctor 1.5.4">
+  <title>Learning to program is like climbing a mountain range</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://asciidoclive.com/assets/asciidoctor.js/css/asciidoctor.css">
+</head>
+
+<body class="article">
+  <div id="header">
+    <nav class="navbar navbar-expand navbar-light bg-light">
+        <div class="nav navbar-nav">
+            <a class="nav-item nav-link active" href="#">Marco Steinke</a>
+            <a class="nav-item nav-link" href="/">Start</a>
+        </div>
+    </nav>
+    <h1>Learning to program is like climbing a mountain range</h1>
+  </div>
+  <div id="content">
+    <div class="sect2">
+      <h3 id="_approximate_reading_time_10min">Approximate reading time: 10Min</h3>
+      <div class="paragraph">
+        <p>SkyChat is a project which shall bring up a new way of communication between
+          different platforms. It does not matter if you open it from your Desktop,
+          Laptop, Smartphone, TV or Console.</p>
+      </div>
+      <div class="paragraph">
+        <p>The following words describe the idea behind SkyChat:</p>
+      </div>
+      <div class="ulist">
+        <ul>
+          <li>
+            <p>1. multi-platform</p>
+          </li>
+          <li>
+            <p>2. fast</p>
+          </li>
+          <li>
+            <p>3. privacy-focused</p>
+          </li>
+        </ul>
+      </div>
+      <div class="paragraph">
+        <p>Before you continue reading: No SkyChat is not what is written here. This
+          Blog-post will reveal a journey which took me 8 years to finish, or to
+          not finish!</p>
+      </div>
     </div>
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <div class="sect1">
+      <h2 id="_inspiration">Inspiration</h2>
+      <div class="sectionbody">
+        <div class="paragraph">
+          <p>Since I started to program in 2012 I always wanted to create a Chat-Messenger.
+            The inspiration came from the simple idea of sharing text-messages between
+            different users through the internet. It was very fascinating to me to
+            deliver content from one user to another. I had no idea of how such things
+            could be realized.</p>
+        </div>
+      </div>
+    </div>
+    <div class="sect1">
+      <h2 id="_first_attempts">First attempts</h2>
+      <div class="sectionbody">
+        <div class="paragraph">
+          <p>After figuring out an idea of how a chat could be working and my programming
+            skillset consisting of barely nothing, but for-loops, while-loops and
+            if-conditions, and also simple file-operations, I managed to write a
+            very small system. This system had very simplistic features, but during
+            this time it released the most intense feelings of success and progress
+            inside of me. &lt;br&gt;&lt;br&gt;The system was written as simple batch-file
+            on a Windows Vista computer. You could start the batch file and enter
+            some username. After this you were welcomed by the message "username
+            entered the chat". I was also proud to add date and time to this message
+            afterwards. Now you had one window which displayed the current chat-log
+            and another window to enter messages in. When entering a message in the
+            message-window it was simply echo&#8217;ed into a log.txt and the chat-window
+            spamed &lt;strong&gt;type log.txt&lt;/strong&gt; and I managed to always
+            show the current chat. With this I repurposed a txt-file into the first
+            database I have ever connected to. I could now open a second window of
+            the batch and choose another username and finally chat with myself. Sounds
+            weird? Well in my eyes this was the next stunning feature: I was finally
+            able to chat, in any case, two users could share ## A new mindset These
+            were my first achievements I had as a programmer. Before I learned about
+            variables, loops, data-types and did not know what to do next. After
+            I achieved to build something very simple with it, I instantaneously
+            felt a lot of motivation and started to think how to improve my small
+            program. I could use the local wireless network to run the program on
+            different computers and chat via a txt-file which was accessible to both
+            users. I could add user-profiles and store Forename, Surname, Email in
+            separate text-files which were repurposed as user-database-tables. I
+            tried on those things, faced new problems (how to make a file accessible
+            in the network) and learned a lot of things which where not really programming
+            problems, but problems which I had to solve to reach the next step. I
+            autonomously developed the characteristic, which made me being interested
+            in a huge variety of areas in computers. I wanted to learn more about
+            operating systems, databases, another programming language.</p>
+        </div>
+      </div>
+    </div>
+    <div class="sect1">
+      <h2 id="_try_everything_do_not_stop">Try everything, do not stop</h2>
+      <div class="sectionbody">
+        <div class="paragraph">
+          <p>&lt;p&gt;At this point I had my tiny foundation of skills, my motivation
+            and my ideas ready to experience new things. While writing new programs
+            in batch, I started to create websites with jimdo, a free-to-use website-builder.
+            This taught me the basics of HTML in 2012. In parallel I started to realize
+            there could be a better way to store data than in a txt-file. Thatswhy
+            I downloaded and installed MySQL for Windows and installed Navicat, a
+            simple and free solution to access database from a Windows computer.
+            &lt;br&gt;&lt;br&gt;With navicat ready, I began to write simple queries
+            in SQL. I inserted, deleted, updated data (mostly 1 row) and was blown
+            away by the simplicity of SQL (for a 14-year-old). Then I realized SQL
+            was far more complex and I got in trouble trying out more complex things.
+            Thatswhy I stopped when I understood how to perform simple CRUD-operations.
+            Now when I knew how to setup a database, insert information and to create
+            a simple website, the next small hill (which was a giant mountain to
+            me) did appear. &lt;br&gt;&lt;br&gt;At this time there was this 14-year
+            old, thinking about building a website with a complete user-registration-system,
+            because I played different online-games and they all offered this. So
+            I created a form, started my local MySQL-Database and tried to get data
+            from my internet-browser into the database by trial-and-error. I did
+            this for a while. Suddenly the first problem, which I was not able to
+            surpass after a few hours, appeared right in front of me and I got in
+            huge trouble.</p>
+        </div>
+      </div>
+    </div>
+    <div class="sect1">
+      <h2 id="_looking_back">Looking back</h2>
+      <div class="sectionbody">
+        <div class="paragraph">
+          <p>Now I had a problem which I could not solve, I learned a lot of things
+            until this point and looked back to find something useful which I may
+            use here to solve my ultimate problem. I googled and saw some weird looking
+            code which was put into the HTML by some users on the internet. When
+            I tried this, I realized it was not working at all. This was the first
+            time I met a so called "preproccessed Programming Language". Batch was
+            a scripting language used on windows. HTML was a markup language to arrange
+            things, SQL also was a scripting-like language to me. But what in the
+            world is a preproccessed language? This lead to investigation and I finally
+            learned how to use this language. To use PHP I had to run a local webserver
+            which was able to compile the language for me. Right, to use a preproccessed
+            language, I have to proccess it. I agreed. So now I was able to write
+            simple hello-world-programs in PHP and call them from the browser. Fine.
+            What&#8217;s next? Back to my original problem: How to get user-input
+            in the browser and put it into my database? I just could not answer this
+            question for a very long time. Months passed, I stopped working on HTML,
+            PHP, SQL and went to the next topic which interested me: Game Hacking.</p>
+        </div>
+      </div>
+    </div>
+    <div class="sect1">
+      <h2 id="_i_was_familiar_with_scripting_languages">I was familiar with scripting languages</h2>
+      <div class="sectionbody">
+        <div class="paragraph">
+          <p>&gt;Due to my experience with scripting languages I was able to get into
+            basic LUA-programming really fast. This also was the language used to
+            write macros in World of Warcraft, my #1 game at this time. I learned
+            about World of Warcraft blocking tons of LUA-functions and met documentation
+            for the first time. I found a documentation of the complete World of
+            Warcraft LUA API and could now find all functions I wanted to use. Sadly
+            all of the interesting functions where blocked, so you were only able
+            to run simple loops to loop over the party-member&#8217;s names or items
+            in your own inventory. I thought that I may be able to use the blocked
+            functions as well, started another google-trip and finally found a "WoW-LUA-unblocker".
+            I downloaded it, started my World of Warcraft with this and WOOOSH, I
+            could now use the functions I wanted inside of the game. It was done
+            by injecting dll into the game&#8217;s proccess. As a result I was now
+            able to use every function which was in the API-documentation. This brought
+            me to a lot of experimenting with a friend (he got a Computer Scientist
+            in Logistics) and resulted in a knowledge of how to read documentations.
+            This was a fundamental skill which every programmer must have. Finally,
+            I reached the next step! By the way, yes, we wrote a LUA-script which
+            let our WoW-character deal an optimized amount of damage based on his
+            equipment. We implemented a script which runs a perfect rotation and
+            added events such as EnemyCastingSpell and EnemyCastBarFillStatus(0.95)
+            which allowed us to interrupt enemy-spells around the last milliseconds
+            of the cast, so he could not fake us and interrupt the spell casting
+            before. This gave us a lot of power and we spent some weeks in writing
+            new scripts for another classes and also built a website (since I knew
+            how this works) to sell those scripts (Yes there were people which would
+            pay $30 for one of those scripts).</p>
+        </div>
+      </div>
+    </div>
+    <div class="sect1">
+      <h2 id="_back_to_normality">Back to normality</h2>
+      <div class="sectionbody">
+        <div class="paragraph">
+          <p>We did not make any money from the scripts. We were below the age of 18
+            and did not want to do something illegal. We took our experience, sadly
+            lost contact during this time and I went on to learn Object-Oriented-Programming.
+            This was the time when I knew I want to study Computer-Science and I
+            knew I had to learn Java. I started to learn Java myself, so when I got
+            into the university I had an advantage. With my previous experiences
+            in programming and my understanding of some of the basic concepts I got
+            into Java really fast and realized I really had an advantage in the university.
+            My advantage was not to be a better programmer or to be more intelligent,
+            but to simply have a tool case which I could take snippets from to solve
+            the problems. This was the point where I was really happy and proud of
+            my previous work and my experience. The university taught me programming
+            in a new, more scientific way and it harmonized with my experimental,
+            explorative path which I followed before.</p>
+        </div>
+        <div class="paragraph">
+          <p>I had my ideas, got better in programming at all and especially in OOP
+            and Java. So I started to work on private projects. From my time as interested
+            "WoW-Hacker" I took an interest in writing game-related code. I spent
+            some time and learned the basics of the Unity-Game-Engine. My goal was
+            to create an offline RPG, which should have some features which I missed
+            in other games. I worked on the same project for about 2 months and it
+            got the largest project which I created at this point. Then a new enemy
+            occured.</p>
+        </div>
+      </div>
+    </div>
+    <div class="sect1">
+      <h2 id="_no_backup_no_mercy">No backup, no mercy</h2>
+      <div class="sectionbody">
+        <div class="paragraph">
+          <p>Yep. You can imagine what happened. I corrupted my hard disk and lost all
+            of my data which was not uploaded to my cloud (I worked with OneDrive
+            at this point and stored all university-related files and documents).
+            But I did not store my Unity-Project since it was too large in my eyes.
+            Lesson learned, I lost my project, somehow achieved to recover it, but
+            the files where still to damaged to repair this project. I then stopped
+            working with Unity. The next project was one of my favorite projects
+            until today. I started to work on the MovingPoint-Game-Engine. A game-engine
+            written in Java which can be imported in a really simple way. It focuses
+            on beginners and shall give them a tool-case to start on developing simple
+            games such as Snake, Doodle Jump, Flappy Bird, Space Shooter. I started
+            to work only in the cloud and could not lose any data again, at least
+            I thought.</p>
+        </div>
+      </div>
+    </div>
+    <div class="sect1">
+      <h2 id="_backups_are_good_vcs_are_godlike">Backups are good, VCS are godlike</h2>
+      <div class="sectionbody">
+        <div class="paragraph">
+          <p>When chaning some classes I got to break my project which had very poor
+            code-quality. At this point I thought the code was good (I had a huge
+            development of my Code Quality in Java) and still managed to break it
+            due to a very high coupling ( I was not aware of SOLID at this point
+            ). I now met Git as a friend of mine pushed all of his projects on GitHub.
+            I was not a friend of git and at least pushed a working copy of my project
+            there. But there were no regularly commits. I started to get back into
+            Web Design and learned Javascript and CSS, spent some time on MovingPoint
+            and got back into being interested in everything, but now with a certain
+            amount of experience and routine in starting and planning new projects.&lt;br&gt;&lt;br&gt;I
+            added features in all projects and went from project to project. I had
+            a class on Professional Software Development in parallel where I learned
+            principles such as SOLID, FIRST and got to know other databases next
+            to MySQL. I also learned Spring Boot in this course. Now I was able to
+            write Software which was on the one hand well-structured, independent
+            and maintainable and on the other hand was a Web-Application being connected
+            to a database. This completely sums up the path which I walked until
+            this point.&lt;br&gt;&lt;br&gt;I started more and more Web-Applications
+            and Websites with PHP-Backend (Yes with my Knowledge from Spring Boot
+            I got back into PHP) and I had well running projects, in which I was
+            able to create the things I have always wanted to create from 8 years
+            ago.&lt;br&gt;&lt;br&gt;Now it is 2020, I have a palette of successful
+            private projects in Spring, PHP (Web), Java (Game Engine), Javascript/CSS/HTML
+            (Web Design), Python (Email-Client WIP) and still have an infinite number
+            of projects I want to work on. 8 years have passed and I am now next
+            to implementing all of the features I wanted to when I started my journey.
+            I still have a lot of inspiration, met cool people which are also intersted
+            in Programming and wish all of the programmers and the beginners to feel
+            the same after a while.</p>
+        </div>
+        <div class="paragraph">
+          <p>You will not implement the next Facebook, Google or Amazon, but you will
+            achieve tiny tiny goals and learn from every project you started, although
+            it failed.</p>
+        </div>
+        <div class="sect2">
+          <h3 id="_ps">PS:</h3>
+          <div class="paragraph">
+            <p>I still haven&#8217;t completely implemented the full-working chat. I
+              started SkyChat, a platform-independent chat-messenger which runs in
+              the browser and I am still working on the security of the application.
+              You can check it out via the following button:</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const HEAD = document.querySelector("#header");
+    const MESSAGE_NO_JAVASCRIPT = "Activate Javascript in your browser, to access this page with its full functionality!";
+
+    // set scroll-behavior to smooth
+    document.querySelector("html").style.scrollBehavior = "smooth";
+
+    class TOC {
+        static create() {
+            HEAD.insertAdjacentHTML("beforeend", "<hr><h2>Table of Contents</h2><br>");
+            HEAD.insertAdjacentHTML("beforeend", "<ul>");
+        
+            document.querySelectorAll("h3").forEach(header => {
+                header.setAttribute("id", header.innerHTML);
+                HEAD.insertAdjacentHTML("beforeend", "<li><a style=\"margin: 12px\" href=\"#" + header.innerHTML + "\">" + header.innerHTML + "</a></li><br>");
+            });
+        
+            HEAD.insertAdjacentHTML("beforeend", "</ul><hr>");
+            HEAD.insertAdjacentHTML("beforeend", "<noscript>" + MESSAGE_NO_JAVASCRIPT + "</noscript>");
+        }
+
+    }
+
+    TOC.create();
+    </script>
+</body>
+
 </html>
