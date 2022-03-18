@@ -16,11 +16,22 @@ const nav = '<nav class=\"navbar navbar-expand navbar-light bg-light\">\
 </div>\
 </nav>';
 
-var html = asciidoctor.convertFile('.README.adoc', { to_file: false, standalone: true })
+var html = asciidoctor.convertFile('README.adoc', { to_file: false, standalone: true });
 
-function renderADOC(html, res) {
-    res.send(nav + html + b4import);
+function renderADOC(filename, res) {
+
+    if(filename != "README.adoc") {
+        const post = asciidoctor.convertFile(["blog/", filename, ".adoc"].join(''), { to_file: false, standalone: true });
+    res.send(nav + post + b4import);
+    }
+
+    console.log(filename);
+
+    const post = asciidoctor.convertFile(filename, { to_file: false, standalone: true });
+    res.send(nav + b4import + post);
 }
 
-app.get('/', (req, res) => renderADOC(html, res));
+app.get('/', (req, res) => renderADOC('README.adoc', res));
+
+app.get('/blog/:post', (req, res) => renderADOC(req.params.post, res));
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
