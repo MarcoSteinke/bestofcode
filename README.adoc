@@ -1,2 +1,13 @@
-# bestofcode
+== bestofcode
 Finally a repository in which my website will be stored and updated
+
+## TODO:
+
+* approximate reading time
+* styles for blog post
+* code snippets
+* suggest posts
+* post tags
+* post author
+* post date
+* disqus
