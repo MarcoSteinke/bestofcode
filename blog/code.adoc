@@ -1,0 +1,21 @@
+// asciidoctor.css
+++++
+<link rel="stylesheet" type="text/css" href="../asciidoctor.css">
+++++
+// doc.adoc
+:stylesheet: asciidoctor.css
+
+:source-highlighter: highlightjs
+
+[source,java]
+----
+public class MyClass {
+    
+    
+    private final Map<GroupID, List<Username>> partitionOfUsersInGroups;
+    
+    public MyClass(List<Username> usernames, List<GroupID> groups) {
+        this.myMap = Map.of(this.runAnyPartition(usernames, groups));
+    }
+}
+----
